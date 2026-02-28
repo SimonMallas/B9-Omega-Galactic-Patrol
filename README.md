@@ -1,6 +1,6 @@
 # B9-Omega-Galactic-Patrol
 
-**A non-theorizing robot that patrols derivative nudges in the chaos galaxy — now with Marvin-level depression and self-sabotage**
+**A Class B-9 M-3 General Utility Non-Theorizing Environmental Control Robot that patrols derivative nudges in the chaos galaxy — now with Marvin-level depression and self-sabotage**
 
 ![Class B9 in the Chaos Galaxy](https://github.com/SimonMallas/B9-Omega-Galactic-Patrol/blob/main/Screenshot%20from%202026-02-28%2014-00-18.png))
 
