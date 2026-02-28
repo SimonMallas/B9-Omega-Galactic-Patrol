@@ -2,7 +2,7 @@
 
 **A non-theorizing robot that patrols derivative nudges in the chaos galaxy — now with Marvin-level depression and self-sabotage**
 
-![Class B9 in the Chaos Galaxy]([https://raw.githubusercontent.com/SimonMallas/B9-Omega-Galactic-Patrol/main/chaos-galaxy-visualization.png)
+![Class B9 in the Chaos Galaxy](https://github.com/SimonMallas/B9-Omega-Galactic-Patrol/blob/main/Screenshot%20from%202026-02-28%2014-00-18.png))
 
 *The Chaos Galaxy as seen from CoreHub. Class B9 (center) attempts to contain recursive dependency nudges while emergent behavior laughs in the background. BedPntor lurks suspiciously nearby.*
 
