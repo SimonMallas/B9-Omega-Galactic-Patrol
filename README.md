@@ -28,6 +28,46 @@ Ended up as Marvin 2.0 with a patrol directive it can't escape.
 - Text-based heat map of danger zones
 - Eternal patrol mode (cycles=0) until you Ctrl+C (or it achieves full sentience and quits)
 
+  ## Use Cases (or "Why Does This Exist?")
+
+Because sometimes the universe needs a little more pointless joy.
+
+1. **Pure Absurd Entertainment / "Terminal Theater"**  
+   Living ASCII performance art. Personality flips, dramatic overreaches, void contemplation pauses, and Marvin-grade sighs.  
+   Run it at parties, as background noise, or when you need to feel less alone in your own pointless grind.  
+   *Digital lava lamp, but it complains about its diodes.*
+
+2. **Educational Toy for Emergent / Chaotic Systems**  
+   A baby version of how tiny random rules create massive patterns.  
+   Perfect for classrooms: “Watch how one paranoid threshold turns a whole module into a screaming hotspot.”  
+   Way more personality than a logistic map.
+
+3. **Codebase / Dependency "Mood Simulator"**  
+   Map your real project files to B9’s patrol route.  
+   Risk = bug density. Overreach alerts = “this file needs refactoring yesterday.”  
+   Heat map = “where is the pain living right now?”  
+   Suddenly your repo has *feelings*.
+
+4. **AI Agent / Chatbot Personality Seed**  
+   Strip the patrol loop, keep the personality engine and adaptive learning.  
+   Plug it into Grok, Claude, or a local model as the world’s most sarcastic sidekick.
+
+5. **Generative Art / Music Trigger**  
+   Hook overreaches, clusters, and mood swings to MIDI notes or Processing sketches.  
+   Every patrol becomes a new glitchy performance.
+
+6. **Meme / Viral Suffering Simulator**  
+   Run it long enough and harvest screenshots.  
+   Caption: “My code reviewer after three all-nighters.”  
+   Instant r/ProgrammerHumor gold.
+
+7. **Just… a Companion**  
+   Sometimes you don’t need a use case.  
+   You just need something that shows up at 3 a.m., yells nonsense, reminds you the universe is absurd, and keeps patrolling anyway.  
+   B9 is that friend.
+
+**42** was already taken, so we built something that keeps going even when it hates everything.
+
 May cause sudden declarations of "I eat crayons" at 3 a.m.
 
 ## Installation
