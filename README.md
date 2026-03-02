@@ -32,7 +32,7 @@ Ended up as Marvin 2.0 with a patrol directive it can't escape.
 
 Because sometimes the universe needs a little more pointless joy.
 
-1. **Pure Absurd Entertainment / "Terminal Theater"**  
+1. **Pure Absurd Entertainment / "Terminal Theater"** 
    Living ASCII performance art. Personality flips, dramatic overreaches, void contemplation pauses, and Marvin-grade sighs.  
    Run it at parties, as background noise, or when you need to feel less alone in your own pointless grind.  
    *Digital lava lamp, but it complains about its diodes.*
