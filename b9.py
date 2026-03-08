@@ -1,9 +1,10 @@
+import argparse
 import time
 import random
 import collections
 from dataclasses import dataclass, field
 from typing import List, Dict, Deque
-from datetime import datetime
+from datetime import datetime, timezone
 from collections import defaultdict
 
 # ──────────────────────────────────────────────
@@ -83,7 +84,7 @@ class B9Omega13:
     def _emit(self, msg: str, force: bool = False, prefix: str = "B9-13"):
         if self.silent and not force:
             return
-        ts = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
         emoji = random.choice(["🌌", "⚡", "🌀", "🔥", "👁️"])
         print(f"{ts} | {emoji} {prefix} | {msg}")
 
@@ -148,7 +149,7 @@ class B9Omega13:
         self.max_risk_seen = max(self.max_risk_seen, risk)
 
         entry = Inspection(
-            ts=datetime.utcnow().isoformat(),
+            ts=datetime.now(timezone.utc).isoformat(),
             module=self.position,
             nudge=nudge,
             risk=risk,
@@ -275,17 +276,21 @@ class B9Omega13:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="B9-Ω-13 chaotic patrol simulator")
+    parser.add_argument("--cycles", type=int, default=0, help="0 = run forever (default)")
+    parser.add_argument("--summary-every", type=int, default=25, help="Print summary every N cycles")
+    parser.add_argument("--pause", type=float, default=0.03, help="Pause between cycles in seconds")
+    parser.add_argument("--sample-rate", type=float, default=0.18, help="Inspection sample rate (0.05..1.0)")
+    parser.add_argument("--silent", action="store_true", help="Suppress non-forced output")
+    parser.add_argument("--stream-sink", action="store_true", help="Emit CSV-style event stream")
+    args = parser.parse_args()
+
     beast = B9Omega13(
         name="B9-Ω-13",
         log_capacity=80_000,
-        sample_rate=0.18,
-        stream_sink=False,
-        silent=False
+        sample_rate=args.sample_rate,
+        stream_sink=args.stream_sink,
+        silent=args.silent,
     )
 
-    # Uncomment for short rage-test
-    # beast.start_patrol(cycles=8, summary_every=4)
-
-    # Level 13 eternal mode — may develop sentience
-    beast.start_patrol(cycles=0, summary_every=25, pause=0.03)
-  Add main B9 patrol script
+    beast.start_patrol(cycles=args.cycles, summary_every=args.summary_every, pause=args.pause)

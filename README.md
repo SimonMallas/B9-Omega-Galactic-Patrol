@@ -46,17 +46,25 @@ Stop with `Ctrl+C`.
 
 ## Running modes
 
-Right now, runtime options are set directly in `b9.py` under `if __name__ == "__main__":`.
+Runtime options are now available via CLI flags.
 
-Default is eternal patrol:
-```python
-beast.start_patrol(cycles=0, summary_every=25, pause=0.03)
+Default (eternal patrol):
+```bash
+python3 b9.py
 ```
 
-For short test runs, replace with e.g.:
-```python
-beast.start_patrol(cycles=8, summary_every=4, pause=0.03)
+Short test run:
+```bash
+python3 b9.py --cycles 8 --summary-every 4 --pause 0.03
 ```
+
+Useful flags:
+- `--cycles` (`0` = forever)
+- `--summary-every`
+- `--pause`
+- `--sample-rate`
+- `--silent`
+- `--stream-sink`
 
 ---
 
